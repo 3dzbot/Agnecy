@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="build/img/student.png" type="image/x-icon">
+    <title>index 2</title>
+    <style>
+        body {
+            background: url("build/img/grass.jpg") no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            padding: 0;
+            -webkit-touch-callout: none;
+            /*iOS Safari*/
+            -webkit-user-select: none;
+            /*Chrome/Safari/Opera*/
+            -khtml-user-select: none;
+            /*Konqueror*/
+            -moz-user-select: none;
+            /*Firefox*/
+            -ms-user-select: none;
+            /*Internet Explorer/Edge*/
+            user-select: none;
+            /*Non-prefixed version, currently not supported by any browser*/
+        }
+        .wrap {
+            text-align: center;
+        }
+        a {
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            color: #000;
+            display: inline-block;
+            width: 30%;
+            margin: 120px auto;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #374bff;
+            transform: scale(1.02);
+            transition: transform .3s;
+        }
+        .circle {
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            perspective: 1500px;
+        }
+        .front, .back {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .front {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .back   {
+            transform: rotateY(180deg);
+            background-color: #fff;
+            text-align: center;
+        }
+        .circle:hover .front {transform: rotateY(180deg);}
+        .circle:hover .back {transform: rotateY(360deg);}
+        @media (max-width: 768px) {
+            a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrap"><a href="index.html">
+вернуться на главную страницу</a></div>
+<div class="circle">
+    <div class="front">Скрытый текст</div>
+    <div class="back">Здесь может быть ваша реклама ))</div>
+</div>
+</body>
+</html>

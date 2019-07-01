@@ -1,0 +1,139 @@
+@media (max-width: 1300px){
+  .header {
+    padding: 10px 15px 0;
+  }
+}
+@media (max-width: 1024px){
+  .header {
+    padding-top: 10px;
+    .nav{
+      font-size: 14px;
+      a {
+        padding: 20px 24px;
+      }
+    }
+    .head-content {
+      padding: 60px 0;
+      .head-text {
+        width: 400px;
+        padding: 5px;
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          padding-top: 26px;
+        }
+      }
+      .head-video {
+        max-width: 550px;
+        max-height: 356px;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.5);;
+        progress {
+          height: 5px;
+        }
+        .volume-btn {
+          bottom: -40px;
+          width: 55px;
+          height: 30px;
+        }
+        &-v-u {
+          right: 200px;
+        }
+        &-v-d {
+          right: 135px;
+        }
+      }
+      .contact-btn {
+        font-size: 18px;
+        max-width: 230px;
+        max-height: 55px;
+        border-radius: 5px;
+        &:hover {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .header {
+    padding-top: 0;
+    .nav{
+      font-size: 18px;
+      a {
+        padding: 20px 38px;
+      }
+    }
+    .head-content {
+      padding: 50px 0 80px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+      .head-text {
+        width: 90%;
+        padding: 5px;
+        margin-left: 10px;
+        h1 {
+          font-size: 2em;
+          text-align: center;
+        }
+        p {
+          padding-top: 26px;
+        }
+      }
+      .head-video {
+        margin: 20px auto;
+        width: 80%;
+        //height: 200px;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.5);;
+        progress {
+          height: 8px;
+        }
+        .volume-btn {
+          bottom: -60px;
+          width: 100px;
+          height: 50px;
+        }
+        &-v-u {
+          left: 3em;
+        }
+        &-v-d {
+          left: 190px;
+        }
+      }
+      .contact-btn {
+        font-size: 18px;
+        max-width: 180px;
+        max-height: 40px;
+        border-radius: 10px;
+        margin-top: 20px;
+        &:hover {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 400px){
+  .header {
+    .head-content {
+      .head-video {
+        box-shadow: none;
+        progress {
+        }
+        .volume-btn {
+        }
+        &-v-u {
+          left: 3em;
+        }
+        &-v-d {
+          left: 140px;
+        }
+      }
+    }
+  }
+}
